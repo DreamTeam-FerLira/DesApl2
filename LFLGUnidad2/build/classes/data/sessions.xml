@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sessions1>
+
+
+
+
+	<sessions>
+		<id>sess00001</id>
+		<sessKey>Pierce</sessKey>
+		<secret>Bellami</secret>
+		<expiry>10</expiry>
+		<data>Source</data>
+	</sessions>
+
+
+</sessions1>
