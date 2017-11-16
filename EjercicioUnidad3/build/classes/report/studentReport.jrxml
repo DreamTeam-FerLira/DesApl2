@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="studentReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="07992611-cb54-4950-b66d-a01bfd701f3d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="c3R1ZGVudHMgQVMgLDQ4LDgxLDczYmE2NTcwLWIzY2ItNDZkNS05ZGNkLTkyMWVjMDM5NzljNDs="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Postgrest"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT students.id,
+	students.name,
+	students.age,
+	students.num_control,
+	students.sex,
+	students.group_student
+FROM students]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+	</field>
+	<field name="age" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="age"/>
+	</field>
+	<field name="num_control" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="num_control"/>
+	</field>
+	<field name="sex" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="sex"/>
+	</field>
+	<field name="group_student" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="group_student"/>
+	</field>
+	<group name="id">
+		<groupExpression><![CDATA[$F{id}]]></groupExpression>
+	</group>
+	<group name="name">
+		<groupExpression><![CDATA[$F{name}]]></groupExpression>
+	</group>
+	<group name="age">
+		<groupExpression><![CDATA[$F{age}]]></groupExpression>
+	</group>
+	<group name="num_control">
+		<groupExpression><![CDATA[$F{num_control}]]></groupExpression>
+	</group>
+	<group name="sex">
+		<groupExpression><![CDATA[$F{sex}]]></groupExpression>
+	</group>
+	<group name="group_student">
+		<groupExpression><![CDATA[$F{group_student}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="0" width="230" height="47" forecolor="#FAF0F0" backcolor="#3B6E44" uuid="2211aab9-0fa4-443b-9624-37fb2274eddd"/>
+				<textElement textAlignment="Center">
+					<font fontName="Comic Sans MS" size="26"/>
+				</textElement>
+				<text><![CDATA[Students Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="80" height="30" forecolor="#FAF5F5" backcolor="#2D421F" uuid="318ae8b2-22a5-45a1-b8ae-22928a62fb69">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1a2be1ce-e15f-46da-a097-37101b540e90"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Eras Light ITC" size="16"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="80" y="0" width="100" height="30" forecolor="#FAF5F5" backcolor="#2D421F" uuid="9783d323-36db-42ef-8d63-701e7927e829">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4287c42e-e8f2-46f4-b6c5-83aac1a68dea"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Eras Light ITC" size="16"/>
+				</textElement>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="0" width="100" height="30" forecolor="#FAF5F5" backcolor="#2D421F" uuid="3042215b-8475-4aa6-bc09-e16183c8abfa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="928655fb-dc80-4168-90c1-eb2a773cf454"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Eras Light ITC" size="16"/>
+				</textElement>
+				<text><![CDATA[age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="1" width="100" height="30" forecolor="#FAF5F5" backcolor="#2D421F" uuid="43caa191-0d3d-4131-ade6-f7efeb9455d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d45362de-9546-41b9-af7c-863387aed408"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Eras Light ITC" size="16"/>
+				</textElement>
+				<text><![CDATA[num_control]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="380" y="1" width="100" height="30" forecolor="#FAF5F5" backcolor="#2D421F" uuid="b300909b-da58-4222-a336-6efd4b23b35e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3b9fc8d8-c9f2-42c4-b767-a925f6b5fb40"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Eras Light ITC" size="16"/>
+				</textElement>
+				<text><![CDATA[sex]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="480" y="0" width="80" height="30" forecolor="#FAF5F5" backcolor="#2D421F" uuid="c2b36e76-82fa-416b-9a58-f8aa44e8d8dd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00434767-5641-4afc-9168-805b95c2b1cf"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Eras Light ITC" size="16"/>
+				</textElement>
+				<text><![CDATA[group_student]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="80" height="30" uuid="9263c7bc-0f3a-4eef-a3d7-96ea66affd6b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1a2be1ce-e15f-46da-a097-37101b540e90"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="100" height="30" uuid="323735a0-97b6-4e57-b9a8-cd5bb09836c2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4287c42e-e8f2-46f4-b6c5-83aac1a68dea"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="100" height="30" uuid="224a20dd-aea2-4459-9324-e32b54bacddd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="928655fb-dc80-4168-90c1-eb2a773cf454"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="100" height="30" uuid="ad4a18c2-dbb7-4a61-bf03-5352d4ddd91d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d45362de-9546-41b9-af7c-863387aed408"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{num_control}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="100" height="30" uuid="4f93a466-4b37-4500-876f-3e06b1991810">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3b9fc8d8-c9f2-42c4-b767-a925f6b5fb40"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{sex}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="80" height="30" uuid="08306e55-e28b-49d1-8255-157fcb54a118">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00434767-5641-4afc-9168-805b95c2b1cf"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Double"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{group_student}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
