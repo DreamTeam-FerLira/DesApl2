@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>#{str.markFormTitle}</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/templates/template.xhtml">
+            <ui:define name="contenido">
+                <h2>#{str.markFormHeader}</h2>
+                <p:fieldset legend="#{str.markLegendForm}">
+                <h:form>
+                    <h:panelGrid columns="1">
+                    <p:inputText placeholder="#{str.markNamePrompt}" value="#{markBean.mark.name}"></p:inputText>
+                    
+                       <p:inputText placeholder="#{str.statusPrompt}" value="#{markBean.mark.status}"></p:inputText>
+                           <p:inputText placeholder="#{str.prestigePrompt}" value="#{markBean.mark.prestige}"></p:inputText>
+                    </h:panelGrid>
+                    <p:commandButton value="#{str.buttonSave}" action="#{markBean.save()}"></p:commandButton>
+                    <p:commandButton value="#{str.buttonDelete}" action="#{markBean.delete()}"></p:commandButton>
+                    <p:commandButton value="#{str.buttonCancel}" action="#{markBean.cancel()}"></p:commandButton>
+                
+                </h:form>
+                </p:fieldset>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
